@@ -1,7 +1,7 @@
 # springboot
-login registrasi spring boot
+login registrasi dengan spring boot
 
-Features:
+Fitur:
 
     User Registration
     User Activation via e-mail link
