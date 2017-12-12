@@ -11,7 +11,20 @@ footer {
   padding-right: 15px;
   background-color: #fff;
 }
+.navbar .navbar-inverse .navbar-fixed-top{
 
+  color:  #cf242c;
+}
+.navbar-inverse {
+    background-color: #cf242c;
+    border-color: #cf242c;
+
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    color: #fff;
+    background-color: #806767;
+}
 /*
  * Off Canvas
  * --------------------------------------------------
@@ -26,18 +39,18 @@ footer {
 
   .row-offcanvas-left
   .sidebar-offcanvas {
-    left: -33%;
+    left: 0%;
   }
 
   .row-offcanvas-left.active {
-    left: 33%;
+    left: 0%;
   }
 
   .sidebar-offcanvas {
     position: absolute;
     top: 0;
-    width: 33%;
-    margin-left: 10px;
+    width: 0%;
+    margin-left: 0px;
   }
 }
 
@@ -114,7 +127,72 @@ footer {
   border-top-right-radius: 0;
 }
 
-.form-signin .btn-primary {
+.form-signin .btn-danger {
     margin-top: 10px;
     margin-bottom: 10px;
+    color: white;
+}
+
+.wrap{
+  background: white;
+  width: 900px;
+  margin: 10px auto;
+}
+
+/*bagian header*/
+.wrap .header{
+  background: green;
+  /*height: 50px;*/
+  padding: 2px 10px;
+}
+
+/*akhir header*/
+
+/*bagian menu*/
+.wrap .menu{
+  background: yellow;
+}
+
+.wrap .menu ul{
+  padding: 0;
+  margin: 0;
+  background: gray;
+  overflow: hidden;
+}
+
+.wrap .menu ul li{
+  float: left;
+  list-style-type: none;
+  padding: 10px;
+}
+/*akhir menu*/
+
+.clear{
+  clear: both;
+}
+
+.badan{
+  height: 450px;
+}
+/*bagian sidebar*/
+.wrap .badan .sidebar{
+  background: #cf242c;
+  float: left;  
+  width: 25%;
+  height: 100%;
+}
+
+/*akhir sidebar*/
+
+.wrap .badan .content{
+  background: gray;
+  float: left;
+  height: 100%;
+  width: 75%; 
+}
+
+.wrap .footer{
+  width: 100%;
+  padding: 10px;
+  background-color: orange;
 }

@@ -5,7 +5,7 @@
 </head>
 <body>
     <div layout:fragment="content">
-        <form class="form-signin" th:action="@{/user/register}" th:object="${user}" action="/user/register" method="post">
+        <form class="form-signin" th:action="@{/user/register}" th:object="${admin}" action="/user/register" method="post">
             <h2 class="form-signin-heading">Please register</h2>
             
             <div th:if="${#fields.hasErrors()}" class="alert alert-danger">
@@ -18,7 +18,7 @@
             <input type="text" id="inputUser" name="userName" class="form-control middle" placeholder="Username" required="required"/>
             <input type="password" id="inputPassword" name="password" class="form-control bottom" placeholder="Password" required="required"/>
 
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
+            <button class="btn btn-lg btn-danger btn-block" type="submit">Register</button>
         </form>
     </div>
 </body>
